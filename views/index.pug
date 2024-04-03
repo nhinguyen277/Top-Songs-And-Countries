@@ -1,0 +1,24 @@
+extends common/layout 
+
+
+block main-content 
+  //You can overwrite the main-content block by writing block content
+  //in the template file which is extending.
+  div.container
+    div.left_side
+      h1.page-title Welcome To #{code.city} City, #{code.country_name} 
+      h2.welcome Explore Updated Top Songs Weekly in #{code.country_name}
+      each playlist in list 
+          div.list-songs
+              iframe(style="border-radius:15px" width="100%" height="870px" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src=`https://open.spotify.com/embed/playlist/${playlist.id}?utm_source=generator`)       
+              //- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMda2apknTqH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              //- img(width="200px" heigh="200px" src=artist.images[0].url)
+    div.right_sidebar
+      div.artists
+        h3 Top Artists      
+        each artist in artists
+          div.info
+              img.artist_img(src=`${artist.images[0].url}` alt=`${artist.name}`)
+              a(href=`/artist/${artist.id}`).title #{artist.name}
+  
+  

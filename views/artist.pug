@@ -1,0 +1,11 @@
+extends common/layout 
+
+block main-content 
+    div.title-container
+        h1.page-title #{artist.name}'s Top Songs 
+        h3.note Enjoy #{artist.name}'s great music in the genres of #{artist.genres}.
+    div.songs-container
+        each s in song
+            div.song
+                //- iframe(style="border-radius:15px" width="100%" height="870px" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src=`https://open.spotify.com/embed/playlist/${playlist.id}?utm_source=generator`)
+                iframe(style="border-radius:12px" src=`https://open.spotify.com/embed/track/${s.id}?utm_source=generator` width="300" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy")

@@ -1,0 +1,376 @@
+body {
+  font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  }
+
+a{
+  text-decoration: none;
+  color: #219fc6;
+}
+#header{
+  background-color: black;
+  color: #219fc6;
+}
+.header-content{
+  display: flex;
+  height: 120px;
+  margin-bottom: 10px;
+  border-color:#197697;
+  border-style: groove;
+}
+
+.header{
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-align: center;
+
+}
+.slogan{
+  font-size: small;
+  margin: 5px 0 0 5px;
+}
+
+.img{
+  height: 100px;
+  width: 100px;
+  margin: 10px 0 0 50px;
+}
+
+
+#main-navigation  ul {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 2em;
+  list-style: none;
+  margin-left: 400px;
+  margin-top: 45px;
+  font-size: 20px;
+}
+
+.index-main{
+  margin-left: 30px;
+}
+#site-name a:link {
+  color: #3b6064;
+  text-decoration: none;
+  
+}
+#site-name a:hover {
+      color: #638889;
+    }
+li a:hover {
+  color: #638889;
+}
+.container{
+  width: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: row;
+}
+#main{
+  min-height:100vh;
+}
+.page-title{
+  color:black ;
+  text-shadow: 1px 0 #219fc6, 0 -1px #219fc6 ;
+  text-align: center;
+}
+.welcome{
+  color:black ;
+  text-shadow: 1px 0 #219fc6, 0 -1px #219fc6 ;
+  margin-left: 20px;
+}
+.left_side{
+  height: 100%;
+  width: 70%;
+
+}
+.list-songs{
+  width: 98%;
+  height: 100%;
+  margin: 0 10px 0 10px;
+}
+.right_sidebar{
+  height:1000px;
+  width:30%;
+  right: 0;
+  /*top: 0; */
+  /* margin-top: 185px; */
+  margin-bottom: 10px; 
+  background-color:black;
+  border-radius: 10px;
+  position:absolute!important;
+  z-index:1;
+  overflow:scroll; 
+  color: #219fc6;
+  /* flex-shrink: 0; */ 
+}
+.artists{
+  margin:10px 0 10px 20px;
+  text-align: center;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 0 40px;
+}
+.artist_img{
+  height: 50px;
+  width: 50px;
+  /* margin: 10px 0 0 50px; */
+}
+.title-container{
+  margin: 50px 0 50px 0;
+}
+.note{
+  color:black ;
+  text-shadow: 1px 0 #219fc6, 0 -1px #219fc6 ;
+  text-align: center;
+}
+.songs-container{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.song{
+  flex: 1 0 0 ;
+  margin: 10px 0 10px 0;
+}
+.general{
+  color:black ;
+  text-shadow: 1px 0 #219fc6, 0 -1px #219fc6 ;
+  text-align: left;
+  margin: 20px 0 0 50px;
+  height: 300px;
+}
+.sub-title{
+  margin: 50px 0 50px 0 ;
+}
+.title{
+  margin-left: 10px;
+}
+#footer{
+  background-color: black;
+  height: 120px;
+  border-top: ridge;
+  width: 100%;
+  /* position: absolute; */
+  padding: 1em;
+
+}
+.footer_content{
+  display: flex;
+  color: #219fc6;
+  flex-flow: row wrap;
+}
+.footer_logo{
+  margin: 15px 0 0 10px;
+}
+.left_footer{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px 50px;
+}
+.right-footer{
+  margin: 5px 0 10px 650px;
+} 
+.nav-footer ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-weight: 300;
+  font-size: 20px;
+}
+.img_footer{
+  height: 50px;
+  width: 50px;
+}
+.logo_name{
+  display: flex;
+  flex-direction: row;
+}
+.copy{
+  margin-left: 10px;
+}
+
+/* 5. MEDIA QUERIES */
+
+/*tablet style overrides*/
+
+@media screen and (max-width: 768px) {
+
+  #header{
+    width: 100%;
+  }
+  .header-content {
+  height: 100px;
+
+  }
+  .header{
+    margin-left: 10px;
+    margin-top: 15px; 
+  }
+  .slogan {
+    font-size: 10px;
+    margin: 5px 0 0 5px;
+  }
+  .header h1 {
+    font-weight:400;
+    font-size: 20px;
+  }
+  .img {
+    height: 80px;
+    width: 80px;
+    margin: 10px 0 0 10px;
+  }
+  
+  #main-navigation  ul {
+    margin-left: 100px;
+    margin-top: 45px;
+    font-size: 20px;
+  }
+
+  .page-title{
+    font-size: 25px;
+  }
+
+  .welcome{
+    font-size: 20px;
+  }
+
+  .list-songs{
+    margin: 0 5px 0 5px;
+  }
+
+  .right_sidebar{
+    height: 980px;
+  }
+  .info{
+    margin: 10px 0 0 0;
+  }
+
+  .general h3{
+    font-size: 18px;
+  }
+  #footer{
+    height: 100px;
+  }
+  .left_footer{
+    margin: 10px 0 10px 20px;
+  }
+  .right-footer {
+    margin: 0 0 10px 250px;
+}
+.copy{
+  font-size: 15px;
+}
+
+.nav-footer a{
+  font-size: 15px;
+}
+  
+}
+
+
+/*Phone style*/
+
+@media screen and (max-width:480px) {
+  #header{
+    width: 100%;
+  }
+  .header-content {
+  height: 80px;
+
+  }
+  .header{
+    margin-left: 5px;
+    margin-top: 10px; 
+  }
+  .slogan {
+    font-size: 10px;
+    margin: 5px 0 0 5px;
+  }
+  .header h1 {
+    font-size: 15px;
+  }
+  .img {
+    height: 60px;
+    width: 60px;
+    margin: 10px 0 0 10px;
+  }
+  
+  #main-navigation  ul {
+    margin-left: 120px;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  .page-title{
+    font-size: 18px;
+  }
+
+  .welcome{
+    font-size: 12px;
+  }
+
+  .list-songs{
+    margin: 0 2px 0 2px;
+  }
+
+  .right_sidebar{
+    height: 940px;
+  }
+  .artists{
+    margin: 5px 0 5px 5px;
+    text-align: center;
+  }
+
+  .artists h3{
+    font-size: 15px;
+  }
+
+  .artist_img{
+    height: 40px;
+    width: 40px;
+  }
+
+  .title{
+    margin: 10px 0 0 5px;
+    font-size: 12px;
+  }
+  .info{
+    margin: 5px 0 0 0;
+  }
+
+  .general{
+    margin: 20px 0 0 30px;
+  }
+  .general h3{
+    font-size: 15px;
+  }
+  .general p{
+    font-size: 12px;
+  }
+  #footer{
+    height: 80px;
+  }
+  .left_footer{
+    margin: 5px 0 5px 0;
+  }
+  .right-footer {
+    margin: 0 0 10px 100px;
+}
+.copy{
+  font-size: 10px;
+}
+
+#footer{
+  width: auto;
+}
+.nav-footer ul{
+  font-size: 15px;
+}
+}
